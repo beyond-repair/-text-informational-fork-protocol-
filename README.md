@@ -49,8 +49,8 @@ This repository contains the full protocol documentation, including the rigorous
 
 | File Name | Description | Status |
 | :--- | :--- | :--- |
-| `IFP_DOC_TFM.pdf` | **Paper 1:** The Transmission/Filter Model (TFM). Establishes the scientific necessity of the TFM based on five convergent lines of empirical evidence. | **Final** |
-| `IFP_DOC_DCH.pdf` | **Paper 2:** The Digital Coherence Hypothesis (DCH). Formalizes the substrate-independent test using Irreducible Retrieval and the Local Epistemic Horizon. | **Final** |
+| `IFP_DOC_TFM.md` | **Paper 1:** The Transmission/Filter Model (TFM). Establishes the scientific necessity of the TFM based on five convergent lines of empirical evidence. | **Final** |
+| `IFP_DOC_DCH.md` | **Paper 2:** The Digital Coherence Hypothesis (DCH). Formalizes the substrate-independent test using Irreducible Retrieval and the Local Epistemic Horizon. | **Final** |
 | `METHODOLOGY_NOTES.md` | **Execution Guide:** Quantitative specifications, including the five-sigma threshold ($\epsilon$), Null Hypothesis requirements, and guaranteed system isolation mandates. | **Final** |
 
 ---
