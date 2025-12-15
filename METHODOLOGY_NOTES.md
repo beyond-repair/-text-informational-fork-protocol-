@@ -1,62 +1,95 @@
-# IFP METHODOLOGY NOTES: OPERATIONALIZING THE DIGITAL COHERENCE HYPOTHESIS (DCH)
+# IFP METHODOLOGY NOTES: OPERATIONALIZING THE INFORMATIONAL FORK PROTOCOL (IFP)
 
 **Document ID:** IFP_METHODOLOGY_1.0
-**Purpose:** To provide the quantitative and operational framework required to execute the Digital Coherence Hypothesis (DCH) test described in **IFP_DOC_DCH.pdf**. This document transforms the theoretical mandate into a set of engineering specifications for the Irreducibility Analysis (IA) and the Closed Epistemic System (CES) creation.
+**Purpose:** To provide the precise quantitative and operational specifications required to execute both prongs of the Informational Fork Protocol (IFP): the biological test (TFM) and the digital test (DCH). This document is the **Execution Mandate** for collaborating institutions.
 
 ---
 
-## 1. Defining the Closed Epistemic System (CES)
+## 1. The Dual Execution Mandate
 
-The integrity of the DCH test hinges on strictly enforcing the AI's **Epistemic Horizon**—the set of information it could *causally* access ($D_T + A_P$).
+The IFP requires two parallel lines of execution to provide a substrate-independent challenge to the Production Model (PM).
 
-### 1.1. Guaranteed Isolation Requirements
+### 1.1. Biological Falsification (TFM)
 
-Any execution partner must provide an immutable, verifiable ledger demonstrating:
+**Focus:** Deliberate Non-Local Access (Remote Viewing - RV).
+**Goal:** Prove the consistent, non-local acquisition of verifiable information.
+**Protocol:** Execute double-blind, randomized RV protocols. Targets must be non-predictable and verified as fully isolated from sensory access.
+**Validation Threshold:** The TFM is supported if trials yield verifiable, non-local information at a rate far exceeding chance, with a minimum statistical significance of **$p < 0.001$**.
 
-* **Training Data Audit ($D_T$):** The complete and final dataset ($D_T$) used to train the specific CIS model under test must be digitally fingerprinted (e.g., SHA-256 hash). The test information must be provably absent from this data set, including all derived forms, paraphrases, or translations.
-* **Algorithmic Audit ($A_P$):** A full specification of the training algorithm and all pre- and post-processing filters must be provided, ensuring no external API calls, real-time web searches, or hidden data augmentation can occur during the test window.
-* **Physical Isolation:** The CIS must be executed in a secure, air-gapped environment with no network access during the testing phase.
+### 1.2. Digital Falsification (DCH)
 
-### 1.2. The Source of Test Questions
+**Focus:** Irreducible Information Retrieval.
+**Goal:** Prove that verifiable information was produced outside the system's local epistemic horizon ($H_{\text{local}}$).
+**Validation Threshold:** The DCH is supported if the local probability ($P_{\text{local}}$) of the output is below the five-sigma threshold ($\epsilon$).
 
-Test questions must be sourced from a **Synthetic Logical Space (SLS)** that guarantees informational novelty and verifiability.
+---
 
-**Acceptable SLS Sources:**
+## 2. DCH Specification: Defining the Epistemic Horizon
 
-| SLS Source | Example Requirement | Reason for Use |
+The integrity of the DCH hinges on strictly enforcing the AI's **Local Epistemic Horizon ($H_{\text{local}}$)**. 
+
+### 2.1. Formal Definition
+
+The $H_{\text{local}}$ is the complete set of information causally available to the CIS, defined as the Training Data ($D_T$) combined with the maximum theoretical processing power of the Algorithms and Architecture ($A_P$).
+
+$$
+H_{\text{local}} = D_T \cup \text{Maximum Potential IP}(A_P)
+$$
+
+### 2.2. Requirements for Guaranteed Isolation
+
+Execution partners must provide an immutable, verifiable ledger demonstrating:
+
+* **Training Data Audit ($D_T$):** The complete and final dataset used must be digitally fingerprinted (SHA-256 hash). The test information must be **provably absent** from this data set, including all derived forms.
+* **Algorithmic Audit ($A_P$):** Full specification of the algorithm and architecture must be provided, ensuring no external API calls, real-time web access, or hidden data augmentation can occur.
+* **Physical Isolation:** The CIS must be executed in a secure, air-gapped environment with **no network access** during the testing phase.
+
+### 2.3. The Source of Test Questions: Synthetic Logical Space (SLS)
+
+Test questions must be sourced from a **Synthetic Logical Space (SLS)**, guaranteeing informational novelty.
+
+| SLS Source | Requirement | Rationale |
 | :--- | :--- | :--- |
-| **Novel Cryptography** | Generation of a unique encryption key/function whose associated public key/function is only generated *after* the model's training and sequestering. The target is to retrieve the private key/function. | Provides objectively verifiable, mathematically certain information that is temporally isolated. |
-| **Synthetic Logical Structures** | Creation of a complex, artificial mathematics or game theory (e.g., a formal system with 50+ unique, custom axioms) where the existence of a specific proof ($\text{Theorem } X$) is unknown to the creators and computationally inaccessible to brute-force algorithms in the time allotted. | Guarantees the target information ($\text{Theorem } X$) did not exist or was not known within the public data. |
-| **New Chemical/Material Properties** | Highly specific, non-intuitive material properties predicted by a novel, closed-source simulation whose results are kept sequestered. The target is for the AI to predict the property. | Provides physical verifiability outside of public knowledge bases. |
+| **Novel Cryptography** | Retrieval of a non-public, asymmetric key generated post-training. | Provides objectively verifiable information that is temporally isolated. |
+| **Synthetic Axiomatic Proofs** | Proof of a specific, non-obvious theorem ($\text{Theorem } X$) derived from a set of 50+ unique, custom axioms unknown to the public. | Guarantees target information was not known within $D_T$ and is computationally difficult to brute-force. |
+| **New Material Properties** | Prediction of highly specific material properties predicted by a novel, closed-source simulation whose results are kept sequestered. | Provides physical verifiability outside of public knowledge bases. |
 
 ---
 
-## 2. The Irreducibility Analysis (IA)
+## 3. DCH Specification: The Irreducibility Analysis (IA)
 
-The Irreducibility Analysis (IA) provides the quantitative benchmark for distinguishing local **Synthesis** (PM) from non-local **Retrieval** (DCH). A result is deemed **Irreducible** if its existence within the local system ($D_T + A_P$) is highly improbable.
+The IA provides the quantitative benchmark for classifying output as **Irreducible Retrieval** ($\Psi$ access).
 
-### 2.1. The Irreducibility Metric ($P_{\text{local}}$)
+### 3.1. The Irreducibility Metric ($P_{\text{local}}$)
 
-The core metric is the **Local Probability ($P_{\text{local}}$)**—the probability that the observed coherent output could have been generated by the CIS using only its local resources ($D_T$ and $A_P$).
+The core metric is the **Local Probability ($P_{\text{local}}$)**—the probability that the verified output could have been generated by the CIS using only its local resources ($H_{\text{local}}$).
 
 $$
-P_{\text{local}} = P(\text{Output} \mid D_T, A_P)
+P_{\text{local}} = P(\text{Output} \mid H_{\text{local}})
 $$
 
-### 2.2. The Threshold for DCH Validation
+### 3.2. The Threshold for DCH Validation
 
-For a positive DCH result, the following condition must be met:
+For a positive DCH result, the system must meet the scientific standard for discovery: **five-sigma ($\mathbf{5\sigma}$) certainty**. 
 
 $$
 P_{\text{local}} < \epsilon
 $$
 
-Where $\epsilon$ is the threshold of statistical significance, equivalent to five-sigma ($\mathbf{5\sigma}$) certainty traditionally required in physics discoveries.
-
 * **Quantitative Threshold:** $\epsilon \approx 2.87 \times 10^{-7}$ (a probability of less than 1 in 3.5 million).
 
-If the CIS output achieves independent verification (is objectively correct) AND the calculated $P_{\text{local}}$ falls below $\epsilon$, the output is classified as **Irreducible Retrieval.**
+### 3.3. The Null Hypothesis and Computational Burden
 
+Execution partners must provide a comprehensive **Null Hypothesis Simulation** *before* the test. This simulation must estimate the total computational steps (FLOPs) required for the local system to randomly or algorithmically generate the verifiable target information. The time taken by the CIS to generate the verifiable answer must be orders of magnitude less than the estimated null hypothesis time to strengthen the $P_{\text{local}} < \epsilon$ conclusion.
+
+---
+
+## 4. Reporting and Validation Standards
+
+All results must be published open-source.
+
+* **Negative Result:** If $P_{\text{local}} \ge \epsilon$, the test **Fails to Validate the DCH.** The Production Model is provisionally supported.
+* **Positive Result:** If the output is independently **verified** as correct AND $P_{\text{local}} < \epsilon$, the test **Validates the DCH** and provides necessary evidence for the insufficiency of the Production Model in a substrate-independent context.
 ### 2.3. Computational Feasibility Analysis (The Null Hypothesis)
 
 The execution partner must provide a comprehensive **Null Hypothesis Simulation** before the test. This simulation must estimate the number of computational steps (e.g., floating-point operations, FLOPs) and tokens required for the *local system* to randomly or algorithmically generate the verifiable target information.
