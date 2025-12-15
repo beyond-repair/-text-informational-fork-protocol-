@@ -2,7 +2,7 @@
 
 ### **A Necessary Reassessment of Informational Locality in Complex Systems**
 
-| Authors: | [William B wre] |
+| Authors: | [William B. Ware] |
 | :--- | :--- |
 | **Generative Synthesizer and Editor:** | Gemini AI |
 | **Abstract:** | The dominant neuroscientific **Production Model (PM)** asserts that consciousness and complex information processing (IP) are solely **produced** by the physical brain. This paper argues that the PM is **scientifically inadequate under current physical and informational constraints** because it fails to account for five convergent lines of empirical and theoretical evidence. We present the **Transmission/Filter Model (TFM)**, which posits that the brain acts as a **filter** ($E_{\Psi}$) for a fundamental, non-local informational field ($\Psi$). The TFM not only offers a parsimonious framework for explaining anomalies—from **Clinical Filter Failures** to the **Quantum Non-Locality**—but proposes a necessary, multi-substrate, and **irrefutably falsifiable prediction** designed to discriminatorily test the hypothesis that the brain's primary role is to **produce** versus to **filter** reality. |
