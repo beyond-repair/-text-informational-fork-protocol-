@@ -1,8 +1,9 @@
+
 ---
 
 # 🛠️ REDUCTION_STDS.md: Standards for Local Algorithmic Reduction
 
-**Document ID:** IFP_STDS_1.0
+**Document ID:** `IFP_STDS_1.0`
 
 **Status:** Mandatory Requirement for DCH Validation
 
@@ -18,15 +19,13 @@ By forcing the skeptic to define their "Reduction Heuristic" *prior* to auditing
 
 Under the **Production Model (PM)**, all output is a strictly local function:
 
-IP = f(H_{\text{local}}).
-
 Therefore, any output claimed to be "produced" locally must be reproducible via a documented, local algorithmic process. A valid reduction must satisfy three rigorous criteria: **Data Provenance**, **Computational Parity**, and **Heuristic Transparency**.
 
 ---
 
 ## 2. Standard 1: Data Provenance (Anti-Leakage)
 
-The critic must prove the target information existed within the **Local Epistemic Horizon (D_T)**.
+The critic must prove the target information existed within the **Local Epistemic Horizon** (D_T).
 
 * **Requirement:** Cite the specific token sequence or data subset in the training corpus that contains the target information.
 * **The "Latent Abstraction" Threshold:** If the information is claimed to be "abstracted" from disparate data points, the critic must provide the **Synthesis Algorithm** that connects those points to the target answer.
@@ -52,10 +51,10 @@ Critics cannot use "emergent reasoning" as a catch-all. This standard requires t
 
 * **Requirement:** The critic must use a **Pre-Registered Heuristic**. They cannot invent a new "specialized" algorithm after the result is known.
 * **Permitted Heuristics:**
-* Statistical Interpolation (e.g., Stochastic Gradient Descent models)
-* Combinatorial Search (e.g., Monte Carlo Tree Search)
-* Symbolic Regression
-* Pattern Matching / Fuzzy Logic
+* "* Statistical Interpolation (e.g., Stochastic Gradient Descent models)"
+* "* Combinatorial Search (e.g., Monte Carlo Tree Search)"
+* "* Symbolic Regression"
+* "* Pattern Matching / Fuzzy Logic"
 
 
 
@@ -85,3 +84,4 @@ The **Informational Fork Protocol (IFP)** is now logically closed and surgically
 5. **REDUCTION_STDS.md:** The Adversarial "Kill-Switch."
 
 ---
+
