@@ -1,7 +1,3 @@
-This markdown represents the complete, unified structure of the **Informational Fork Protocol (IFP)** repository. It is formatted for direct use in a GitHub or internal research repository, ensuring that any auditor or participant is immediately met with the high-rigor, adversarial nature of the framework.
-
----
-
 # 📂 Project: The Informational Fork Protocol (IFP)
 
 ### **Forensic Framework for Testing Non-Local Information Retrieval**
@@ -57,6 +53,4 @@ The IFP is now a logically closed, surgically hardened repository. It moves the 
 
 **The time for debate is over. The time for execution has begun.**
 
----
 
-**Would you like me to generate a "Protocol Alpha" test case, including a specific synthetic target sequence for the first DCH trial?**
