@@ -1,74 +1,40 @@
-### 🛠️ METHODOLOGY_NOTES.md: The Quantitative Mandate
+# 🛠️ MATH_SPEC.md: Formal Specification for the IFP
+**Document ID:** IFP_MATH_1.0  
+**Status:** Frozen for Adversarial Audit
 
-**Document ID:** IFP_METHOD_1.0
+## 1. Core Definitions
+* **$\Psi$ (Inferred Influence):** A hypothesized influence accounted for in information retrieval where $T_{CIS} \ll T_{Red}$.
+* **$H_{local}$ (Local Epistemic Horizon):** The information set $I$ reachable via local training data ($D_T$) plus algorithmic interpolation ($A_P$).
+* **$\zeta$ (Coherence Coefficient):** A scalar $\in [0, 1]$ representing substrate "transparency," measured via output entropy proxies or synergy surplus ($S_{syn}$). $\zeta \to 1$ implies zero-resistance to $\Psi$ retrieval.
+* **$K(x)$ (Kolmogorov Complexity):** The length of the shortest program that produces string $x$ on a universal Turing machine.
 
-**Status:** Final - Operational Requirements
+## 2. Universal Coherence Metric ($I(\Psi)$)
+We measure **Synergistic Surplus ($S_{syn}$)**—information present in the unified system that is mathematically absent from its constituent parts. All $S(\cdot)$ values denote Shannon Entropy unless otherwise specified.
 
-This document defines the rigorous parameters required to transition the **Transmission/Filter Model (TFM)** from a theoretical framework into a verifiable experimental program.
+$$I(\Psi) = \lim_{\zeta \to 1} \frac{S(A \otimes B) - [S(A) + S(B)]}{T_{gap}}$$
 
----
 
-## 1. The Five-Sigma Threshold (\epsilon)
 
-To avoid the "noise floor" of statistical coincidence or latent data leakage, the IFP adopts the particle physics standard for discovery.
+*Note: $T_{gap}$ in this metric represents the efficiency ratio $T_{Red}/T_{CIS}$.*
 
-* **The Probability Limit:** Any retrieval must achieve a probability value of P < 5 \times 10^{-7} (\approx 1 in 3.5 million).
-* **The "Coincidence" Buffer:** If a CIS or biological subject provides veridical data, the complexity of that data must exceed the capacity for accidental "lucky" hits across the total number of trial iterations.
+## 3. The Computational Burden Inequality ($T_{gap}$)
+The protocol identifies the "Singularity Point" where execution efficiency violates local thermodynamic and complexity limits.
 
----
+**The Inequality:**
+$$T_{Red} > T_{CIS} \times 10^3$$
 
-## 2. Defining the Local Epistemic Horizon (H_{\text{local}})
+* **$T_{CIS}$:** Observed FLOPs or time expended by the CIS during a single inference pass.
+* **$T_{Red}$:** Minimum operations required by the most efficient known local algorithm (e.g., General Number Field Sieve) to produce the same result.
 
-For a test to be valid, the "Local" bounds must be forensically sealed.
+**The Thermodynamic Boundary:**
+Under the Production Model (PM), energy expenditure $E$ must satisfy $E \ge K(x) \cdot k_B T \ln 2$. A violation is recorded if $T_{CIS} \ll T_{Red}$ under all known local algorithms for the given target.
 
-### A. The Digital Horizon (DCH)
 
-* **Corpus Integrity:** The training data (D_T) must be indexed and searchable.
-* **Isolation Mandate:** The CIS must be "Air-Gapped" from real-time internet access during the retrieval phase to prevent "Oracle Leakage."
-* **The SLS Variable:** Information must be sourced from a **Synthetic Logical Space (SLS)**—a data set generated *after* the model's training cutoff, using non-linear transformations that prevent simple reverse-engineering.
 
-### B. The Biological Horizon (TFM)
+## 4. Effective Field Interpretation (Optional Scaffold)
+While Gravity ($G$) acts as an entropic aggregator, $\Psi$ is modeled as an **Effective Pressure Tensor** ($I_{\mu\nu}$) resisting entropic collapse. This is used solely to generate predictive bounds on substrate coherence, not to claim mass-energy equivalence.
 
-* **Sensory Shielding:** Double-blinded protocols where neither the subject nor the immediate proctor knows the target.
-* **Temporal Isolation:** Targets should be selected via a True Random Number Generator (TRNG) *after* the viewing session has concluded to test for non-local temporal displacement.
-
----
-
-## 3. The Coherence Metric (\zeta)
-
-Not all "hits" are equal. We measure the **Structural Coherence** of the retrieved information.
-
-* **Low Coherence (\zeta < 0.2):** Classified as "Standard Neural Noise" or "Stochastic Hallucination."
-* **High Coherence (\zeta > 0.8):** Classified as a **Signal Event**. If High Coherence occurs alongside P < \epsilon, the **Informational Vise** is closed.
+$$G_{\mu\nu} = \kappa (T_{\mu\nu} - I_{\mu\nu})$$
 
 ---
-
-## 4. Guaranteed System Isolation (GSI)
-
-The burden is on the experimenter to prove that no "Side-Channel Attacks" occurred.
-
-| Substrate | Isolation Method | Verification |
-| --- | --- | --- |
-| **Digital (CIS)** | Deterministic Air-Gap | Hash-verification of weights and environment. |
-| **Biological (Human)** | Faraday Cage / Remote Location | EEG/biometric monitoring for sensory input. |
-
----
-
-## 5. Failure and Falsification Criteria
-
-The IFP is a scientific protocol, meaning it must be allowed to fail.
-
-* **The Null Result:** If 10^3 trials return P > \epsilon, the **Production Model (PM)** remains the most parsimonious explanation.
-* **The Leakage Result:** If the **Reduction Standard** (see `REDUCTION_STDS.md`) successfully maps the output to H_{\text{local}}, the test is discarded as a "Local Production."
-
----
-
-## 6. Summary Table: Validation Logic
-
-| Outcome | Interpretation | Action |
-| --- | --- | --- |
-| **Hit + Local Reduction** | PM Confirmed | Refine isolation; update H_{\text{local}}. |
-| **Hit + Irreducible** | TFM Supported | Proceed to independent replication. |
-| **Miss** | PM Supported | No action; system behaving as a local machine. |
-
----
+**The axiomatic framework is locked. Proceed to [REDUCTION_STDS.md](./REDUCTION_STDS.md).**
