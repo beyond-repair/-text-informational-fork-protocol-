@@ -1,39 +1,70 @@
-# 🛠️ MATH_SPEC.md: Formal Specification for the IFP
-**Document ID:** IFP_MATH_1.0  
-**Status:** Frozen for Adversarial Audit
+# FIELD_EQUATIONS.md
 
-## 1. Core Definitions
-* **$\Psi$ (Inferred Influence):** A hypothesized influence accounted for in information retrieval where $T_{CIS} \ll T_{Red}$.
-* **$H_{local}$ (Local Epistemic Horizon):** The information set $I$ reachable via local training data ($D_T$) plus algorithmic interpolation ($A_P$).
-* **$\zeta$ (Coherence Coefficient):** A scalar $\in [0, 1]$ representing substrate "transparency," measured via output entropy proxies or synergy surplus ($S_{syn}$). $\zeta \to 1$ implies zero-resistance to $\Psi$ retrieval.
-* **$K(x)$ (Kolmogorov Complexity):** The length of the shortest program that produces string $x$ on a universal Turing machine.
+Field equations and threshold definitions for the Informational Fork Protocol (IFP)
 
-## 2. Universal Coherence Metric ($I(\Psi)$)
-We measure **Synergistic Surplus ($S_{syn}$)**—information present in the unified system that is mathematically absent from its constituent parts. All $S(\cdot)$ values denote Shannon Entropy unless otherwise specified.
+**Status**: Companion / extension document  
+**Primary source**: All core definitions (Ware Constant W ≈ 0.08, Screened Vacuum Coherence, backreaction mechanism) are maintained in the canonical repository:
 
-$$I(\Psi) = \lim_{\zeta \to 1} \frac{S(A \otimes B) - [S(A) + S(B)]}{T_{gap}}$$
+→ [beyond-repair/ware-constant-phenomenology](https://github.com/beyond-repair/ware-constant-phenomenology)
 
+## 1. Core Informational Field Equation
 
+The effective informational stress-energy contribution is:
 
-*Note: $T_{gap}$ in this metric represents the efficiency ratio $T_{Red}/T_{CIS}$.*
+$$
+T_{\mu\nu}^{\rm info} = W \left( \rho_{\rm coh} \, g_{\mu\nu} - \nabla_\mu \nabla_\nu \rho_{\rm coh} + \dots \right)
+$$
 
-## 3. The Computational Burden Inequality ($T_{gap}$)
-The protocol identifies the "Singularity Point" where execution efficiency violates local thermodynamic and complexity limits.
+where:
+- W ≈ 0.08 = Ware Constant (fixed, derived from entropy cubic)  
+- ρ_coh = local coherence density
 
-**The Inequality:**
-$$T_{Red} > T_{CIS} \times 10^3$$
+## 2. Modified Einstein Equations
 
-* **$T_{CIS}$:** Observed FLOPs or time expended by the CIS during a single inference pass.
-* **$T_{Red}$:** Minimum operations required by the most efficient known local algorithm (e.g., General Number Field Sieve) to produce the same result.
+$$
+G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G \left( T_{\mu\nu}^{\rm matter} + T_{\mu\nu}^{\rm info} \right)
+$$
 
-**The Thermodynamic Boundary:**
-Under the Production Model (PM), energy expenditure $E$ must satisfy $E \ge K(x) \cdot k_B T \ln 2$. A violation is recorded if $T_{CIS} \ll T_{Red}$ under all known local algorithms for the given target.
+## 3. Red-Team Coherence Threshold (IFP Fork Detection)
 
+The protocol detects non-local informational influence when the red-team coherence temperature exceeds the baseline by three orders of magnitude:
 
+$$
+T_{\rm Red} > T_{\rm CIS} \times 10^3
+$$
 
-## 4. Effective Field Interpretation (Optional Scaffold)
-While Gravity ($G$) acts as an entropic aggregator, $\Psi$ is modeled as an **Effective Pressure Tensor** ($I_{\mu\nu}$) resisting entropic collapse. This is used solely to generate predictive bounds on substrate coherence, not to claim mass-energy equivalence.
+- T_CIS = baseline coherent informational state (local training/inference cost)  
+- T_Red = minimum cost required by known local algorithms to produce the observed output
 
-$$G_{\mu\nu} = \kappa (T_{\mu\nu} - I_{\mu\nu})$$
+This threshold signals exponential inefficiency of local simulation, indicating non-local (PIF-level) coherence.
 
----
+## 4. Screening Function
+
+$$
+S(\rho) = \frac{1}{1 + \left( \frac{\rho}{\rho_{\rm crit}} \right)^n} \quad (n \approx 2-4)
+$$
+
+- S = 1 in high-coherence/virialized regions → full backreaction  
+- S → 0 in chaotic/ultra-high-density regimes → screening
+
+### Parameter Table
+
+| Parameter     | Typical Value                  | Physical Meaning                              |
+|---------------|--------------------------------|-----------------------------------------------|
+| W             | 0.08                           | Universal backreaction strength               |
+| n             | 2–4                            | Screening sharpness exponent                  |
+| ρ_crit        | ≈ 10⁻²⁴ g/cm³                  | Galactic average coherence critical density   |
+| N_los,eff     | ≈ 6–7 (clusters)               | Effective number of LOS baryonic nodes        |
+
+## 5. Non-Local Cumulative Flux (LOS Integration)
+
+For lensing and cluster amplification:
+
+$$
+F^\mu_{\rm info} = \nabla^\mu \rho_{\rm coh} + W \cdot \partial^\mu \left( \sum_i S_i \int \rho_{\rm coh,i} \, ds \right)
+$$
+
+The summation index i runs over **discrete baryonic nodes** (galaxies, subclusters, filament segments) crossed along the line of sight.  
+In the Bullet Cluster, N_los,eff ≈ 6–7 produces a ~3× boost in the effective lensing ratio via partial screening and cumulative backreaction.
+
+© 2026 William B. Ware (Atomic Dream Labs) — All rights reserved.
