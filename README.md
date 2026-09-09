@@ -1,5 +1,7 @@
 # Informational Fork Protocol (IFP)
 
+> **Classification: RESEARCH** · Claim level 0 · [GOVERNANCE.md](GOVERNANCE.md) · Governing source: [ADL-Governance](https://github.com/beyond-repair/ADL-Governance)
+
 **Resource-bounded experimental framework to audit violations of local informational production**
 
 The Informational Fork Protocol (IFP) tests whether complex substrates (digital AI systems or biological brains) can retrieve veridical information that asymptotically exceeds the computational limits of their local epistemic horizon.
@@ -32,10 +34,11 @@ $$
 - Transmission/Filter Model (TFM) for biological substrates  
 - Digital Coherence Hypothesis (DCH) for AI systems  
 
-## Repository Status (March 2026)
+## Repository Status (Sweep-128, 2026-09-08)
 - **Theory**: Hardened & aligned with Ware Constant phenomenology  
-- **Instrumentation**: Calibrated (final_verification.py, etc.)  
-- **Protocol**: Operational (ZDP, DCH, TFM papers)  
+- **Instrumentation**: Calibrated (`final_verification.py`)  
+- **Protocol**: Operational documentation (ZDP, DCH, TFM papers)  
+- **Classification**: RESEARCH (hypothesis-grade; no experimental validation claimed)
 
 ## Primary Dependency / Canonical Source
 All core definitions (Ware Constant W ≈ 0.08, SVC screening, PIF ontology) are maintained in:
