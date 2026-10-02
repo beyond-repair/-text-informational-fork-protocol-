@@ -15,9 +15,9 @@
 [![Governance](https://img.shields.io/badge/ADL--Governance-7c3aed?style=for-the-badge&labelColor=0f0f23)](https://github.com/beyond-repair/ADL-Governance)
 
 ```
-LIFECYCLE   RESEARCH
+LIFECYCLE   RESEARCH (Claim-0 runnable sketch)
 CLAIM       ≤ 1
-NOT CLAIMED consciousness mechanism · AGI
+NOT CLAIMED consciousness mechanism · AGI · measured non-local retrieval
 ```
 
 </div>
@@ -28,6 +28,49 @@ NOT CLAIMED consciousness mechanism · AGI
 Classification follows [ADL-Governance](https://github.com/beyond-repair/ADL-Governance). A README facelift does not raise claim level. Physics and pharmacology stay at the evidenced cap. CI green is not experimental validation.
 
 ---
+
+## ▌ RUN (Claim-0 sketch)
+
+**RUNNABLE SKETCH — NOT A COMPLETE PRODUCT.** A stranger can clone, install, run the audit calculator, and pass pytest. That does **not** show non-local retrieval, consciousness, or a measured Ware Constant. The preserved body below is the original protocol text. Its line "Instrumentation: Calibrated" means the written constants are coded here; it is not an experimental calibration.
+
+The tool only does arithmetic on numbers you supply:
+
+- fork candidate when `T_Red > T_CIS × 1000` (strict)
+- Landauer lower bound `E ≥ K(x) · k_B T ln 2` at `T = 300 K` unless you override it
+- optional screening `S(ρ) = 1 / (1 + (ρ / ρ_crit)^n)` with `ρ_crit = 1e-24`, `n = 3`
+- optional collapsed-attention flag when a supplied proxy `ζ > 0.95`
+
+No config file. Flags are the configuration. There is no compile step.
+
+```bash
+git clone https://github.com/beyond-repair/-text-informational-fork-protocol-.git
+cd -- -text-informational-fork-protocol-
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+python final_verification.py --t_cis 120.5 --t_red 500000 --k_x 4200 --event_id IFP-DEMO-001 --rho 1e-30 --zeta 0.97 --output audit_cert.json
+pytest -q
+```
+
+`ifp-audit` is the same entry point after install. `audit_cert.json` is valid JSON and includes `printed_certificate`. Exit code 0 is a successful calculation. Exit code 2 is a bad argument. A printed status of `FAIL (Local Production Possible)` is still a successful run: the inequality did not flag a fork.
+
+Demo expectation for the command above: `fork_detected` true (`500000 > 120.5 × 1000`), `S(ρ) ≈ 1`, collapsed attention true. Units of `T_CIS` and `T_Red` must match each other; the tool does not convert them.
+
+## ▌ LAYOUT
+
+```
+├── final_verification.py     ← Claim-0 audit CLI (stdlib only)
+├── tests/test_final_verification.py
+├── FIELD_EQUATIONS.md
+├── METHODOLOGY_NOTES.md
+├── REDUCTION_STDS.md
+├── IFP_DOC_ZDP.3.1.md        ← Zero-Day Protocol
+├── IFP_DOC_TFM.md            ← Transmission/Filter Model
+├── IFP_DOC_DCH.md            ← Digital Coherence Hypothesis
+├── GOVERNANCE.md
+├── pyproject.toml
+└── requirements.txt
+```
 
 ## ▌ PRESERVED BODY
 

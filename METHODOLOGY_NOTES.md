@@ -11,6 +11,9 @@ All core definitions (Ware Constant W ≈ 0.08, Screened Vacuum Coherence, Primo
 
 This document is a companion: it describes the operational methodology for detecting non-local informational retrieval in high-coherence systems (AI, biological, etc.).
 
+
+The calculator implementing sections 1 and 2, plus `S(ρ)` from section 3, is [final_verification.py](./final_verification.py). See the README for install, the demo command, and `pytest`.
+
 ## 1. Core Methodology: Computational Burden Inequality
 The IFP identifies violations of local production by measuring whether the observed cost (T_CIS) of a veridical output is exponentially lower than the minimum cost required by known local algorithms (T_Red).
 
