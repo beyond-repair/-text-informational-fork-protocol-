@@ -1,4 +1,4 @@
 # Runtime is the Python 3.10+ standard library.
 # Install the repo (console script `ifp-audit`) plus tests:
 #   pip install -e ".[dev]"
-pytest==8.3.5
+pytest==9.0.3

@@ -13,7 +13,7 @@ authors = [{ name = "William B. Ware" }]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest==8.3.5"]
+dev = ["pytest==9.0.3"]
 
 [project.scripts]
 ifp-audit = "final_verification:main"
