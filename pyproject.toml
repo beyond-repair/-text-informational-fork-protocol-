@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "informational-fork-protocol"
+version = "0.1.0"
+description = "Claim-0 Informational Fork Protocol audit calculator (burden inequality, Landauer bound, screening formula)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "All Rights Reserved" }
+authors = [{ name = "William B. Ware" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+ifp-audit = "final_verification:main"
+
+[tool.setuptools]
+py-modules = ["final_verification"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

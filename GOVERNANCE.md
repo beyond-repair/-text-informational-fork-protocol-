@@ -17,8 +17,9 @@
 - No product, production, or validated physics status.
 
 ## CI / Tests
-- No automated CI surface (pure documentation + single pure-Python verification utility).
-- `final_verification.py` is self-contained; no external dependencies.
+- No GitHub Actions workflow in this repo (token/workflow policy). Verification is local pytest.
+- `final_verification.py` runtime is the Python 3.10+ standard library.
+- `pip install -e ".[dev]"` then `pytest -q` checks the burden inequality, Landauer bound, screening formula, and CLI. Green tests are not experimental validation.
 
 ## Lifecycle
 - RESEARCH until experimental validation evidence is supplied and claim level raised under ADL-Governance CLAIM_VALIDATION.md.

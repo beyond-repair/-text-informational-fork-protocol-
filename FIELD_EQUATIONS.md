@@ -67,4 +67,9 @@ $$
 The summation index i runs over **discrete baryonic nodes** (galaxies, subclusters, filament segments) crossed along the line of sight.  
 In the Bullet Cluster, N_los,eff ≈ 6–7 produces a ~3× boost in the effective lensing ratio via partial screening and cumulative backreaction.
 
+
+## 6. Computable form (Claim-0)
+
+The burden inequality and the screening function are evaluated by [final_verification.py](./final_verification.py). Default screening exponent in the tool is `n = 3` (inside the documented range 2–4). `ρ_crit` defaults to `10⁻²⁴` g/cm³. Passing `--rho` reports `S(ρ)`; it does not measure a density.
+
 © 2026 William B. Ware (Atomic Dream Labs) — All rights reserved.
