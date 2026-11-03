@@ -20,6 +20,7 @@
 - No GitHub Actions workflow in this repo (token/workflow policy). Verification is local pytest.
 - `final_verification.py` runtime is the Python 3.10+ standard library.
 - `pip install -e ".[dev]"` then `pytest -q` checks the burden inequality, Landauer bound, screening formula, and CLI. Green tests are not experimental validation.
+- Sweep-627 (2026-11-03): local pytest 13 passed; demo CLI arithmetic confirmed.
 
 ## Lifecycle
 - RESEARCH until experimental validation evidence is supplied and claim level raised under ADL-Governance CLAIM_VALIDATION.md.
@@ -27,3 +28,4 @@
 
 ## Sweep lock
 - Sweep-128 (2026-09-08): docs lock complete; classification RESEARCH confirmed.
+- Sweep-627 (2026-11-03): re-audit — RESEARCH / Claim-0 confirmed; tests green locally; no claim elevation; no CI by policy.
